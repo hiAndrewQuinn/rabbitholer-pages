@@ -1,0 +1,32 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>The design of Rabbitholer |</title></head><body><header><h1></h1></header><main><h1>The design of Rabbitholer</h1><h2>More of an anti-design</h2><time datetime=2024-06-02T00:00:00+00:00>2024-06-02</time><p>At its heart, Rabbitholer is less of a product and more of a <em>design philosophy</em>.
+Most instances of Rabbitholer are formed out of 3 Git repos, feeding into one
+another in sequence:</p><pre tabindex=0><code>┌───────────────────┐                    
+│rabbitholer-content│  (.md files)       
+└────────┬──────────┘                    
+         │                               
+         ▼                               
+provides the raw content for             
+         │                               
+         │                               
+   ┌─────▼─────┐                         
+   │rabbitholer│      (Hugo website repo)
+   └─────┬─────┘                         
+         │                               
+         ▼                               
+ builds the HTML for                     
+         │                               
+         │                               
+ ┌───────▼─────────┐                     
+ │rabbitholer-pages│  (.html, .xml files)
+ └───────┬─────────┘                     
+         │                               
+         ▼                               
+ can be hosted... anywhere!
+</code></pre><p>The Git repos are separated to allow for maximum <strong>separation of concerns</strong>.
+Your writing should be separate from all the machinery needed to create an actual website.
+And your actual website should be neatly packaged, and separable from the
+machinery, so you can just as easily stick it on a Raspberry Pi or on a cheap
+ancient PHP server as you can one of the sleeker, more modern offerings like
+Github Pages or Netlify. Astute readers will hear echos of the old promise
+of
+<a href=https://en.wikipedia.org/wiki/Semantic_HTML>semantic HTML</a>.</p><br><div><div>Tags:</div><ul><li><a href=/rabbitholer-pages/tags/rabbitholer/>Rabbitholer</a></li><li><a href=/rabbitholer-pages/tags/rabbitholer-docs/>Rabbitholer-Docs</a></li></ul></div></main><footer><hr><p><a href=https://hiAndrewQuinn.github.io/rabbitholer-pages/>Home</a></p></footer></body></html>
